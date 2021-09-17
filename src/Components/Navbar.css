@@ -1,0 +1,88 @@
+.nav-container{
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-top: -10px;
+  min-height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 40px;
+  background-color : #28282B;
+  position: relative;
+}
+
+.menu-logo-alignment{
+  margin-right: auto;
+}
+
+.menu-logo-styles{
+  color: white;
+  font-size: 2rem;
+}
+
+.menu-items-container{
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-items{
+  margin:10px;
+  color: white;
+  font-size: 1rem;
+}
+
+.btn-style{
+  border: 2px solid white;
+  background-color: #28282B;
+  color: white;
+}
+
+.menu-icon
+{
+  color: white;
+  margin-right: 40px;
+  font-size: 2rem;
+  display: none;
+}
+
+/* responsive querries start */
+@media only screen and (max-width : 750px) {
+  .menu-icon{
+    display:block
+  }
+  .menu-items-container{
+    display:none;
+  }
+  .margin-top-mobile{
+    margin-top : 10px;
+  }
+  .menu-logo-alignment{
+    margin-right: 35%;
+  }
+}
+
+.menu-items-container-small-screen{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 65px;
+  width: 100vw;
+  background-color: #28282B;
+  margin-right: 0px;
+  padding:20px;
+}
+.menu-items-small-screen{
+  color : white;
+  font-size: 1rem;
+  padding-right: 50%;
+  padding-left: 50%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.menu-items-small-screen:hover{
+  background-color: white;
+  color: black;
+}
