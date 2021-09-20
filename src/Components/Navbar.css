@@ -8,7 +8,9 @@
   justify-content: flex-end;
   padding-left: 40px;
   background-color : #28282B;
-  position: relative;
+  position: fixed;
+  z-index: 500;
+  width: -webkit-fill-available;
 }
 
 .menu-logo-alignment{
