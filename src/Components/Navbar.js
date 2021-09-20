@@ -13,6 +13,8 @@ function Navbar() {
       setClick(false)
   }
 
+  const closeMobileMenu = () =>setClick(!click);
+
   window.addEventListener('resize' , disableResponsive)
   return (
     <div className="nav-container">
@@ -23,13 +25,13 @@ function Navbar() {
       </Link>
       </div>
       <div className={click && "menu-items-container-small-screen" ||"menu-items-container"}>
-      <Link to='/home'  className={click && "menu-items-small-screen" ||"menu-items"}>
+      <Link to='/home' onClick={closeMobileMenu}  className={click && "menu-items-small-screen" ||"menu-items"}>
             Home
       </Link>
-      <Link to='/services'  className={click && "menu-items-small-screen" ||"menu-items"}>
+      <Link to='/services' onClick={closeMobileMenu}  className={click && "menu-items-small-screen" ||"menu-items"}>
             Services
       </Link>
-      <Link to='/products'  className={click && "menu-items-small-screen" ||"menu-items"}>
+      <Link to='/products' onClick={closeMobileMenu} className={click && "menu-items-small-screen" ||"menu-items"}>
             Products
       </Link>
       <div className="margin-top-mobile"><Button buttonStyle='btn-styles'>SIGN UP</Button></div>
