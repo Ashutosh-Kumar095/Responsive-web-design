@@ -30,7 +30,30 @@ function HeroSection() {
                 </div>
                 </div>
             </div>
-        </div>
+            <div className="content-box">
+                <h2 className="text-adjustment">Check out these EPIC Destinations!</h2>
+                <div className='image-container'>
+                    <div className='image-fixer'>
+                        <img className='image' src='./images/img-9.jpg'/>
+                        <h3 className="text-adjustment">Explore the hidden waterfall deep inside the Amazon jungle.</h3> 
+                    </div>
+                    <div className='image-fixer'>
+                        <img className='image' src='./images/img-8.jpg'/>
+                        <h3 className="text-adjustment">Ride through the Sahara desert in a guided Camel tour.</h3> 
+                    </div>
+                </div>
+                <div className='image-container'>
+                <div className='image-fixer'>
+                        <img className='image' src='./images/img-1.jpg'/>
+                        <h3 className="text-adjustment">Experience the wanderlust with us .</h3> 
+                    </div>
+                    <div className='image-fixer'>
+                        <img className='image' src='./images/img-2.jpg'/>
+                        <h3 className="text-adjustment">Travel through the islands of bali in a private cruise.</h3> 
+                    </div>
+                </div>
+            </div>
+            </div>
     )
 }
 
