@@ -60,6 +60,9 @@
   .margin-top-mobile{
     margin-top : 10px;
   }
+  .menu-logo-styles{
+    width: 35vw;
+  }
 }
 
 .menu-items-container-small-screen{

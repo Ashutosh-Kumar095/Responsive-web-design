@@ -38,3 +38,11 @@
     width: 30vw;
     height: 20vh;
 }
+
+@media only screen and (max-width : 750px) {
+    .login-label{
+        width: 28vw;
+        height: 7vh;
+    }
+    
+}
