@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import HeroSection  from './Components/HeroSection';
 import FooterSection from './Components/FooterSection';
+import LoginRegistration from './Components/LoginRegistration';
 
 
 function App() {
@@ -10,9 +11,9 @@ function App() {
     <>
       <Router>
         <Navbar/>
-        <HeroSection/>
         <Switch>
-          <Route path="/" exact></Route>
+          <Route path="/" exact component={(props)=>{return (<HeroSection {...props}/>)}}></Route>
+          <Route path="/login" exact component={() => { return (<LoginRegistration/>)}} />
         </Switch>
         <FooterSection/>
       </Router>

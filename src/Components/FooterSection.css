@@ -1,0 +1,44 @@
+.footer-parent{
+    min-height: 40vh;
+    background-color: #242424;
+    margin-left: -8px;
+    margin-right: -8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.footer-font{
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+}
+
+.email-block{
+    display: flex;
+    min-height: 8vh;
+    margin-top: 3%;
+}
+
+.email-input{
+    margin-right: 4%;
+    width: 280px;
+    padding : 3%;
+}
+
+.social-networking-icons{
+    display: flex;
+    margin-top: 3%;
+}
+
+.brand-icons{
+    height: 7vh;
+    width: 7vw;
+    margin-left: 10%;
+}
+
+@media only screen and (max-width : 650px) {
+    .footer-font{
+        font-size: 1rem;;
+    }
+}

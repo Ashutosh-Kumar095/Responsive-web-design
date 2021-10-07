@@ -13,26 +13,27 @@ function Navbar() {
       setClick(false)
   }
 
-  const closeMobileMenu = () =>setClick(!click);
+  const closeMobileMenu = () =>{
+        if(window.innerWidth>750)
+            setClick(false)
+        else
+            setClick(!click);    
+  }
 
   window.addEventListener('resize' , disableResponsive)
   return (
     <div className="nav-container">
       <div className="menu-logo-alignment">
-      <Link to='/'  className="menu-logo-styles">
-            TRVL
-            <i class='fab fa-typo3' />
+      <Link to='/' >
+            <img className="menu-logo-styles" src="./images/comicbros.jpg"/>
       </Link>
       </div>
       <div className={click && "menu-items-container-small-screen" ||"menu-items-container"}>
-      <Link to='/home' onClick={closeMobileMenu}  className={click && "menu-items-small-screen" ||"menu-items"}>
+      <Link to='/' onClick={closeMobileMenu}  className={click && "menu-items-small-screen" ||"menu-items"}>
             Home
       </Link>
-      <Link to='/services' onClick={closeMobileMenu}  className={click && "menu-items-small-screen" ||"menu-items"}>
-            Services
-      </Link>
-      <Link to='/products' onClick={closeMobileMenu} className={click && "menu-items-small-screen" ||"menu-items"}>
-            Products
+      <Link to='/collections' onClick={closeMobileMenu}  className={click && "menu-items-small-screen" ||"menu-items"}>
+            Collections
       </Link>
       <div className="margin-top-mobile"><Button buttonStyle='btn-styles'>SIGN UP</Button></div>
       </div>
