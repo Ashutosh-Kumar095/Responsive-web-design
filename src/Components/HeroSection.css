@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    color: #676261;
     font-size: 2rem;
     position: absolute;
     top: 30%;
@@ -35,7 +35,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        color: white;
+        color: #676261;
         font-size: 0.8rem;
         position: absolute;
         left: 5%;
