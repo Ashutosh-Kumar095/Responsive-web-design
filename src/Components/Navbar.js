@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import  Button  from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
@@ -25,7 +25,7 @@ function Navbar() {
     <div className="nav-container">
       <div className="menu-logo-alignment">
       <Link to='/' >
-            <img className="menu-logo-styles" src="./images/comicbros.jpg"/>
+            <img className="menu-logo-styles" src="./images/brand-logo.jpg"/>
       </Link>
       </div>
       <div className={click && "menu-items-container-small-screen" ||"menu-items-container"}>

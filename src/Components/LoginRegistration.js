@@ -9,7 +9,7 @@ export default function LoginRegistration() {
     return (
         <div className='login-container'>
             <div className='registration-div'>
-                <img  className="login-label" src="./images/login-label.jpg"/>
+                <img  className="login-label" src="./images/registration-logo.jpg"/>
                 <form onSubmit={submitForm}>
                     <label className="labels">
                         Name :
